@@ -1,6 +1,6 @@
-module github.com/deejiw/xk6-gcp
+module github.com/rmscoal/xk6-gcp
 
-go 1.19
+go 1.21
 
 require (
 	cloud.google.com/go/monitoring v1.13.0

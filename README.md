@@ -2,6 +2,8 @@
 
 This is a [k6](https://k6.io) extension using the [xk6](https://github.com/grafana/xk6) system.
 
+Thanks to [deejiw](https://github.com/deejiw) for the [repo](https://github.com/deejiw/xk6-gcp) you've made!
+
 ## Build
 
 To build a `k6` binary with this extension, first ensure you have the prerequisites:
@@ -13,12 +15,12 @@ Then:
 
 1. Install `xk6`:
   ```shell
-  $ go install go.k6.io/xk6/cmd/xk6@latest
+  go install go.k6.io/xk6/cmd/xk6@latest
   ```
 
 2. Build the binary:
   ```shell
-  $ xk6 build --with github.com/deejiw/xk6-gcp@latest
+  xk6 build --with github.com/rmscoal/xk6-gcp@latest
   ```
 
 ## Example

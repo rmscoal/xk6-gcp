@@ -1,10 +1,11 @@
+
 import { Gcp } from "k6/x/gcp";
 
 const gcp = new Gcp({
-  emulatorHost: "localhost:8085",
-  projectId: "project-id",
+  emulator_host: "localhost:8085",
+  project_id: "example-project",
 });
-export default function () {
+export default function() {
   const t = gcp.pubsubTopic("xxx");
   const msgId = gcp.pubsubPublish(t, { foo: "bar" });
   console.log(msgId);
