@@ -23,6 +23,11 @@ Then:
   xk6 build --with github.com/rmscoal/xk6-gcp@latest
   ```
 
+If you're developing, you can do
+```shell
+xk6 build --with github.com/rmscoal/xk6-gcp=.
+```
+
 ## Example
 
 ```javascript
